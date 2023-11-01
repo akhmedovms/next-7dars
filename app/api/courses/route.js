@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-
-import courses from "./db.json";
-export async function GET(request) {
+import courses from "../db.json";
+export function GET() {
   return NextResponse.json(courses);
 }
